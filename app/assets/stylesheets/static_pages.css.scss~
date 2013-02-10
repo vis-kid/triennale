@@ -2,6 +2,7 @@ h1 {
   text-align: center;
 }
 .bit-title {
+  font-size: 55px;
   width: 100%;
   @include box-sizing(border-box);
 }
