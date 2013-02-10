@@ -19,6 +19,7 @@ group :assets do
 	gem 'coffee-rails', '3.2.2'             
 	gem 'uglifier', '1.2.3'                     
 	gem 'haml-rails'
+	gem 'html2haml'
 end                                             
 
 group :test do                                    

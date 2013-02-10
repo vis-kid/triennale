@@ -1,4 +1,4 @@
-= provide(:title, 'Home')
+= provide(:title, '  Home')
 %h1 Grafix is not for everyone
 .text-column
   %p Some Lorem Ipsum here kjfdkfdkfdjfkdjfdfjdfjdkkjkdfjdkfjdkfjdkfjdkfjdkfjdkfjdkfjdkfjdkfjdkfjdkfjdkfjdkjjjjjjjjjjjjjjjjjjjjjjjjkdjfdkfjdkfjdkfjdkfjdfjdkfjdkjfdkfjdkfjdkfjdkfjdkfjdkfjdkfjdkfjdkfjdkjkdjkfjkjkfdf jfdkjfdkfjdkfjdkfjdkfjdkfjdkfjdkfj

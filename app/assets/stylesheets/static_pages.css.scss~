@@ -5,6 +5,8 @@ h1 {
 }
 
 ul li:first-child {
+  margin: 0px;
+  padding: 0px;
   float: left;
 }
 ul li { 

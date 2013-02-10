@@ -1,0 +1,8 @@
+%footer.footer-wrapper
+  %nav
+    %li
+      %a{ :href => '#' } ABOUT
+    %li
+      %a{ :href => '#' } MAP
+    %li
+      %a{ :href => '#' } IMPRESSUM 

@@ -1,1 +1,8 @@
 @import "bourbon";
+@import "neat";
+@import "home";
+
+body {
+  width: 80%;
+  margin: auto;
+}
