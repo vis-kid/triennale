@@ -1,19 +1,29 @@
 h1 {
-  clear: both;
   text-align: center;
   background: red;
 }
 
-ul li:first-child {
-  margin: 0px;
-  padding: 0px;
-  float: left;
+.header-wrapper, .footer-wrapper { 
+  @include box-sizing(border-box);
+  height: 50px;
+  @include linear-gradient(black, grey);
 }
-ul li { 
-  float: right;
-  padding: 10px;
-  list-style-type: none;
-  a { 
-    text-decoration: none;
+
+ul { 
+  padding-top: 15px;
+  text-align: center;
+  li { 
+    text-align: center;
+    display: inline;
+    padding: 10px;
+    list-style-type: none;
+    a { 
+      text-decoration: none;
+    }
   }
 }
+
+
+
+
+

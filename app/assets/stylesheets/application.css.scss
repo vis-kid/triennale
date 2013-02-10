@@ -3,6 +3,12 @@
 @import "static_pages";
 
 body {
-  width: 80%;
+  width: 100%;
   margin: auto;
+  background: green;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
 }
