@@ -3,9 +3,10 @@
 @import "static_pages";
 
 body {
+  font-family: $helvetica;
   width: 100%;
   margin: auto;
-  background: red;
+  background: green;
 }
 
 .container {

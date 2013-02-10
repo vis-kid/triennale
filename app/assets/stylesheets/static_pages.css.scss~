@@ -1,9 +1,16 @@
 h1 {
   text-align: center;
-  background: red;
+}
+.bit-title {
+  width: 100%;
+  @include box-sizing(border-box);
+}
+p {
+  text: white;
 }
 
 .header-wrapper, .footer-wrapper { 
+  width: 100%;
   @include box-sizing(border-box);
   height: 50px;
   @include linear-gradient(black, grey);
@@ -18,6 +25,7 @@ ul {
     padding: 10px;
     list-style-type: none;
     a { 
+      color: white;
       text-decoration: none;
     }
   }

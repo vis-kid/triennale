@@ -1,6 +1,13 @@
 h1 {
   text-align: center;
-  background: red;
+}
+.bit-title {
+  font-size: 55px;
+  width: 100%;
+  @include box-sizing(border-box);
+}
+p {
+  text: white;
 }
 
 .header-wrapper, .footer-wrapper { 
@@ -19,6 +26,7 @@ ul {
     padding: 10px;
     list-style-type: none;
     a { 
+      color: white;
       text-decoration: none;
     }
   }
