@@ -6,8 +6,10 @@ h1 {
   width: 100%;
   @include box-sizing(border-box);
 }
-p {
+.text-column{
+ @include columns(2); 
   text: black;
+  padding-bottom: 30px;
 }
 
 .header-wrapper, .footer-wrapper { 
@@ -16,6 +18,10 @@ p {
   @include box-sizing(border-box);
   height: 50px;
   @include linear-gradient(black, grey);
+}
+
+.footer-wrapper {
+  @include linear-gradient(grey, black);
 }
 
 ul { 
