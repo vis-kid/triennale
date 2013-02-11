@@ -1,11 +1,9 @@
-h1 {
+.big-title {
   text-align: center;
-}
-.bit-title {
   font-size: 55px;
   width: 100%;
-  @include box-sizing(border-box);
 }
+
 .text-column{
  @include columns(2); 
   text: black;
@@ -14,21 +12,19 @@ h1 {
 
 .header-wrapper, .footer-wrapper { 
   color: white;
-  width: 100%;
-  @include box-sizing(border-box);
+  font-size: 14px;
   height: 50px;
   @include linear-gradient(black, grey);
 }
 
-.footerwrapper {
+.footer-wrapper {
   @include linear-gradient(grey, black);
 }
 
 ul { 
-  padding-top: 15px;
+  padding-top: 19px;
   text-align: center;
   li { 
-    text-align: center;
     display: inline;
     padding: 10px;
     list-style-type: none;
