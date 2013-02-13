@@ -1,0 +1,57 @@
+/*
+Syntax error: File to import not found or unreadable: compass/reset.
+              Load paths:
+                /Users/vis_kid/k-haus/triennale
+                /Users/vis_kid/k-haus/triennale/sass
+        on line 6 of sass/screen.scss
+
+1: /* Welcome to Compass.
+2:  * In this file you should write your main styles. (or centralize your imports)
+3:  * Import this file using the following HTML or equivalent:
+4:  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+5: 
+6: @import "compass/reset";
+
+Backtrace:
+sass/screen.scss:6
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/tree/import_node.rb:45:in `import'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:215:in `visit_import'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/tree/root_node.rb:20:in `render'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/engine.rb:315:in `_render'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/engine.rb:262:in `render'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:235:in `watch'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/plugin.rb:107:in `method_missing'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/exec.rb:444:in `watch_or_update'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/exec.rb:307:in `process_result'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/exec.rb:41:in `parse'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/lib/sass/exec.rb:21:in `parse!'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/gems/sass-3.2.5/bin/sass:8:in `<top (required)>'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/bin/sass:19:in `load'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/bin/sass:19:in `<main>'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/vis_kid/.rvm/gems/ruby-1.9.3-p327@global/bin/ruby_noexec_wrapper:14:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: compass/reset.\A               Load paths:\A                 /Users/vis_kid/k-haus/triennale\A                 /Users/vis_kid/k-haus/triennale/sass\A         on line 6 of sass/screen.scss\A \A 1: /* Welcome to Compass.\A 2:  * In this file you should write your main styles. (or centralize your imports)\A 3:  * Import this file using the following HTML or equivalent:\A 4:  * <link href=\"/stylesheets/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" /> */\A 5: \A 6: @import \"compass/reset\";"; }

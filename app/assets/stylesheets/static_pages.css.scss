@@ -1,37 +1,58 @@
+.header-wrapper, .footer-wrapper { 
+  color: white;
+  font-size: 0.625em; //10px / 16px
+  height: 50px;
+  position: relative;
+  @include linear-gradient(black, grey);
+  ul { 
+    padding-top: 19px;
+    text-align: center;
+    li { 
+      display: inline;
+      padding: 10px;
+      list-style-type: none;
+      a { 
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.nav_tabs { 
+  @include box-sizing(border-box);
+  .exhibition, .project, .symposium, .program {
+    width: 25%;
+    float: left;
+    margin-top: 10px;
+    height: 40px;
+    background: black;
+  }
+}
+
+
+
 .big-title {
   text-align: center;
-  font-size: 55px;
+  font-size: 3.4375em; // 55px / 16px
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  font-style: italic;
+
 }
 
 .text-column{
  @include columns(2); 
   text: black;
+  font-size: 1.125em; // 18px / 16px
   padding-bottom: 30px;
 }
 
-.header-wrapper, .footer-wrapper { 
-  color: white;
-  font-size: 14px;
-  height: 50px;
-  @include linear-gradient(black, grey);
-}
+
 
 .footer-wrapper {
   @include linear-gradient(grey, black);
-}
-
-ul { 
-  padding-top: 19px;
-  text-align: center;
-  li { 
-    display: inline;
-    padding: 10px;
-    list-style-type: none;
-    a { 
-      color: white;
-      text-decoration: none;
-    }
-  }
 }
 
 

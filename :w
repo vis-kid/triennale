@@ -20,18 +20,20 @@
 }
 
 .nav_tabs { 
-  @include box-sizing(border-box);
-  .exhibition, .project, .symposium, .program {
-    width: 25%;
-    float: left;
-    padding-left: 3px;
-    margin-top: 10px;
-    height: 40px;
-    background: black;
-  }
+  width: 100%;
+  horizontal-align: middle;
 }
 
-
+.exhibition, .project, .symposium, .program {
+  @include box-sizing(border-box);
+  width: 15%;
+  margin-right: 4px;;
+  border: white;
+  float: left;
+  margin-top: 10px;
+  height: 40px;
+  background: black;
+}
 
 .big-title {
   text-align: center;
