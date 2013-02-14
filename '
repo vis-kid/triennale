@@ -8,7 +8,7 @@ body {
   font-size: 100%;
   font-family: $helvetica;
   color: black;
-  background-color: white;
+  background-color: white;;
 }
 
 .container {

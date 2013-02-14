@@ -55,9 +55,24 @@
     float: left;
     margin-top: 10px;
     height: 40px;
-    background: black;
     margin-bottom: 35px;
   }
+}
+
+.exhibition {
+  background-color: #195935;
+}
+
+.project {
+  background-color: #588c49;
+}
+
+.symposium { 
+  background-color: #71a64b;
+}
+
+.program {
+  background-color: #80bf41;
 }
 
 .big-title {
@@ -81,7 +96,7 @@
   text: black;
   font-size: 1.125em; // 18px / 16px
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
 }
