@@ -1,9 +1,10 @@
+@import "bourbon";
 .header-wrapper, .footer-wrapper { 
+  background: black;
   color: white;
   font-size: 0.625em; //10px / 16px
   height: 50px;
   position: relative;
-  @include linear-gradient(black, grey);
   ul { 
     padding-top: 19px;
     text-align: center;
@@ -19,6 +20,33 @@
   }
 }
 
+.footer-wrapper {
+  clear: both;
+}
+
+.logo {
+  @include box-sizing(border-box);
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  float: left;
+  padding-left: 12px;
+  padding-top: 8px;
+}
+
+.k-h_logo {
+  @extend .logo;
+  font-size: 20px;
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
+.social-media {
+  float: right;
+  padding-right: 20px;
+}
+
+
 .nav_tabs { 
   @include box-sizing(border-box);
   .exhibition, .project, .symposium, .program {
@@ -27,6 +55,7 @@
     margin-top: 10px;
     height: 40px;
     background: black;
+    margin-bottom: 35px;
   }
 }
 
@@ -34,27 +63,43 @@
 
 .big-title {
   text-align: center;
-  font-size: 3.4375em; // 55px / 16px
+  font-size: 2.8125em; 
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.10em;
   font-style: italic;
+}
 
+.small-title {
+ @extend .big-title;
+ font-size: 2.5em;
+ padding-top: 8px;
+ padding-bottom: 18px;
 }
 
 .text-column{
  @include columns(2); 
   text: black;
   font-size: 1.125em; // 18px / 16px
+  padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-
-
-.footer-wrapper {
-  @include linear-gradient(grey, black);
+.image-boxes {
+  background: white;
+  width: auto;
+  height: 250px;
 }
-
+.box01, .box02, .box03, .box04 {
+  width: 25%;
+  height: 230px;;
+  background: black;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 
 

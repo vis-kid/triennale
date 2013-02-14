@@ -8,12 +8,12 @@ body {
   font-size: 100%;
   font-family: $helvetica;
   color: black;
-  background-color: white;
+  background-color: yellow;;
 }
 
 .container {
   @include box-sizing(border-box);
   margin: auto;
   width: 90%;
-  background: red;
+  background: white;
 }

@@ -2,20 +2,10 @@
   %nav
     %ul
       %li
-        %a{ :href => '#' } HOME
+        %a.logo{ :href => '#' } in.print.out
       %li
-        %a{ :href => '#' } K-H
+        %a.k-h_logo{ :href => '#' } K-H
       %li
-        %a{ :href => '#' } FB
+        %a.social-media{ :href => '#' } FB
       %li
-        %a{ :href => '#' } TUMBLR
-  .nav_tabs
-    %ul
-      %li
-        %a{ :href => '#' } Exhibition
-      %li
-        %a{ :href => '#' } Project
-      %li
-        %a{ :href => '#' } Symposium
-      %li 
-        %a{ :href => '#' } Program
+        %a.social-media{ :href => '#' } TUMBLR
