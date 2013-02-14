@@ -1,4 +1,5 @@
 @import "bourbon";
+
 .header-wrapper, .footer-wrapper { 
   background: black;
   color: white;
@@ -72,7 +73,7 @@
 }
 
 .program {
-  background-color: "#80bf41";
+  background-color: #80bf41;
 }
 
 .big-title {
@@ -82,12 +83,13 @@
   text-transform: uppercase;
   letter-spacing: 0.10em;
   font-style: italic;
+  margin-top: 12px;
 }
 
 .small-title {
  @extend .big-title;
  font-size: 2.5em;
- padding-top: 8px;
+ padding-top: 14px;
  padding-bottom: 18px;
 }
 
@@ -111,7 +113,7 @@
   padding-right: 3px;
   border-right: 3px solid white;
   width: 25%;
-  height: 230px;;
+  height: 200px;;
   background: black;
   float: left;
   margin-top: 20px;

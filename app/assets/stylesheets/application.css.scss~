@@ -1,7 +1,7 @@
 @import "bourbon";
 @import "neat";
 @import "static_pages";
-@import "reset.css";
+@import "reset";
 
 body {
   @include box-sizing(border-box);
@@ -15,5 +15,5 @@ body {
   @include box-sizing(border-box);
   margin: auto;
   width: 90%;
-  background: white;
+  background: yellow;
 }
