@@ -51,6 +51,7 @@
   @include box-sizing(border-box);
   .exhibition, .project, .symposium, .program {
     width: 25%;
+    border-right: 2px solid white;
     float: left;
     margin-top: 10px;
     height: 40px;
@@ -58,8 +59,6 @@
     margin-bottom: 35px;
   }
 }
-
-
 
 .big-title {
   text-align: center;
@@ -93,6 +92,9 @@
   height: 250px;
 }
 .box01, .box02, .box03, .box04 {
+  @include box-sizing(border-box);
+  padding-right: 3px;
+  border-right: 3px solid white;
   width: 25%;
   height: 230px;;
   background: black;
