@@ -1,11 +1,7 @@
 %header.header-wrapper
   %nav
+    %a.logo{ :href => '#' } in.print.out
+    %a.k-h_logo{ :href => '#' } K-H
     %ul
       %li
-        %a.logo{ :href => '#' } in.print.out
-      %li
-        %a.k-h_logo{ :href => '#' } K-H
-      %li
         %a.social-media{ :href => '#' } FB
-      %li
-        %a.social-media{ :href => '#' } TUMBLR
