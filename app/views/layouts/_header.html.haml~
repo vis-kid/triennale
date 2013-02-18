@@ -3,5 +3,5 @@
     %a.logo{ :href => '#' } in.print.out
     .k-h-wrapper
       = image_tag("K-Haus-Logo3.jpg", :alt => "Künstlerhaus", :class => "k-h_logo")
-    %p.k-h-logo-text k/haus
+      %p.k-h-logo-text k/haus
     %a.social-media{ :href => '#' } FB
