@@ -110,6 +110,10 @@ $white-border: 2px solid white;
   background-color: #80bf41;
 }
 
+.context-title, .big-title, .small-title, .intro-text {
+  text-shadow: white 0 1px 2px #999FA2;
+}
+
 .context-title {
   text-align: center;
   font-size: 3.125em; // 50px / 16px
@@ -136,7 +140,6 @@ $white-border: 2px solid white;
 }
 
 .intro-text {
-  color: black;
   font-size: 1.375em; // 22px / 16px
   padding-top: 30px;
   padding-bottom: 8px;
@@ -158,7 +161,7 @@ $white-border: 2px solid white;
   height: 300px;
   width: 95%;;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   border: 2px solid rgba(0, 0, 0, 0.05);
   .box01, .box02, .box03, .box04 {
     @include box-sizing(border-box);
