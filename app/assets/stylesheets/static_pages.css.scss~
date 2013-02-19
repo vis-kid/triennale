@@ -112,14 +112,14 @@ $white-border: 2px solid white;
   background-color: #71a64b;
   border-right: $white-border;
   &:hover {
-    background: lighten(#71a64b, 5%);
+    background: lighten(#71a64b, 10%);
   }
 }
 
 .program {
   background-color: #80bf41;
   &:hover {
-    background: lighten(#80bf41, 5%);
+    background: lighten(#80bf41, 10%);
   }
 }
 
@@ -169,8 +169,8 @@ $white-border: 2px solid white;
 }
 
 .image-boxes {
-  border: 1px dotted rgba(0, 0, 0, 0.3);
-  @include box-shadow(0 0 40px rgba(0,0,0,0.1));
+  border: 2px dashed rgba(0, 0, 0, 0.1);
+  @include box-shadow(0 0 40px rgba(0,0,0,0.07));
   padding: 2%;
   height: 300px;
   width: 95%;;
@@ -183,7 +183,7 @@ $white-border: 2px solid white;
     width: 25%;
     height: 230px;
     img {
-      @include box-shadow(5px 5px 10px rgba(0,0,0,0.1));
+      @include box-shadow(5px 5px 10px rgba(0,0,0,0.08));
       max-width: 100%;
       max-height: 100%;
 
