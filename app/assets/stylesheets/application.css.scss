@@ -9,6 +9,8 @@ body {
   font-family: $helvetica;
   color: black;
   background-color: white;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
 }
 
 .container {

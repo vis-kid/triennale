@@ -15,5 +15,5 @@ body {
   @include box-sizing(border-box);
   margin: auto;
   width: 90%;
-  background: yellow;
+  background: white;
 }
