@@ -88,26 +88,39 @@ $white-border: 2px solid white;
     margin-top: 10px; 
     height: 40px;
     margin-bottom: 35px;
+    cursor: pointer;
   }
 }
 
 .exhibition {
   background-color: #195935;
   border-right: $white-border;
+  &:hover {
+    background: lighten(#195935, 10%);
+  }
 }
 
 .project {
   background-color: #588c49;
   border-right: $white-border;
+  &:hover {
+    background: lighten(#588c49, 10%);
+  }
 }
 
 .symposium { 
   background-color: #71a64b;
   border-right: $white-border;
+  &:hover {
+    background: lighten(#71a64b, 10%);
+  }
 }
 
 .program {
   background-color: #80bf41;
+  &:hover {
+    background: lighten(#80bf41, 10%);
+  }
 }
 
 .context-title, .big-title, .small-title {
