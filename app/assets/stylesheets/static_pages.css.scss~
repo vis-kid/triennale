@@ -84,11 +84,21 @@ $white-border: 2px solid white;
   clear: both;
   .exhibition, .project, .symposium, .program {
     width: 25%;
+    color: white;
+    text-align: center;
     float: left;
     margin-top: 10px; 
     height: 40px;
     margin-bottom: 35px;
     cursor: pointer;
+    p {
+      padding-top: 10px;
+      text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+    }
+    &:hover {
+      color: black;
+      text-shadow: none;
+    }
   }
 }
 
@@ -141,7 +151,7 @@ $white-border: 2px solid white;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.10em;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .small-title {
@@ -170,11 +180,10 @@ $white-border: 2px solid white;
 }
 
 .image-boxes {
-  border: 2px dashed rgba(0, 0, 0, 0.1);
-  @include box-shadow(0 0 40px rgba(0,0,0,0.07));
+  @include box-shadow(0 0 10px rgba(0,0,0,0.07));
   padding: 2%;
-  height: 270px;
-  width: 97%;;
+  height: 285px;
+  width: 98%;;
   margin: auto;
   margin-bottom: 20px;
   .box01, .box02, .box03, .box04 {
@@ -196,5 +205,14 @@ $white-border: 2px solid white;
 }
 
 
-
-
+@media screen and (max-width: 716px) {
+  .nav_tabs { 
+    .exhibition, .project, .symposium, .program {
+      width: 50%;
+      margin-bottom: 0px;
+      clear: both;
+    }
+    .symposium, .program { 
+    }
+  }
+}

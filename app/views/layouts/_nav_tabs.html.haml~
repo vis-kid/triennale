@@ -1,10 +1,9 @@
 .nav_tabs
-  %ul
-    %li
-      %a{ :href => '#'} Exhibition
-    %li
-      %a{ :href => '#'} Project
-    %li
-      %a{ :href => '#'} Symposium
-    %li
-      %a{ :href => '#'} Program
+  .exhibition
+    %p Austellung
+  .project
+    %p Plakatkunstprojekt
+  .symposium
+    %p SYMPOSIUM
+  .program
+    %p BEGLEITPROGRAMM
