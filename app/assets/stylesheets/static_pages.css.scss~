@@ -32,7 +32,10 @@ $white-border: 2px solid white;
         text-align: center;
         text-decoration: none;
         color: white;
+        &:hover {
+          color: #80BF41;
         }
+      }
       &:last-child {
         border-right: none;
       }
@@ -96,8 +99,8 @@ $white-border: 2px solid white;
       text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
     }
     &:hover {
-      color: black;
-      text-shadow: none;
+      color: #80BF41;
+      text-shadow: 1px 1px 0px rgba(0,0,0,0.0);
     }
   }
 }
@@ -138,6 +141,8 @@ $white-border: 2px solid white;
 }
 
 .context-title {
+  clear: both;
+  padding: none;
   text-align: center;
   font-size: 3.125em; // 50px / 16px
   font-style: italic;
@@ -204,15 +209,38 @@ $white-border: 2px solid white;
   }
 }
 
-
-@media screen and (max-width: 716px) {
-  .nav_tabs { 
+@media screen and (max-width: 820px) {
+  .nav_tabs {
     .exhibition, .project, .symposium, .program {
       width: 50%;
       margin-bottom: 0px;
-      clear: both;
     }
-    .symposium, .program { 
+    p {
+      padding-top: 14px;
+      font-size: 0.93em;
     }
   }
-}
+  .context-title {
+    clear: both;
+    display: block;
+    padding-top: 14px;
+      font-size: 2.5em;
+  }
+  .intro-text {
+    padding-top: 10px;
+    font-size: 0.9em;
+  }
+  .big-title {
+    font-size: 1.3em;
+  }
+  .small-title {
+    font-size: 1.1em;
+  }
+  .text-column {
+    @include columns(1);
+    font-size: 0.9em;
+  }
+  .footer-wrapper {
+    font-size: 0.8em;
+  }
+}  
