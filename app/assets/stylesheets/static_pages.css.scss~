@@ -70,6 +70,7 @@ $green-hover: #80BF41;
   float: left;
   &:hover {
     background-color: #195935;
+  }
 }
 
 .k-h-logo-text { 
@@ -202,7 +203,7 @@ $green-hover: #80BF41;
   @include box-shadow(0 0 10px rgba(0,0,0,0.07));
   padding: 2%;
   height: 285px;
-  width: 98%;;
+  width: 100%;
   margin: auto;
   margin-bottom: 20px;
   background-color: white;
@@ -261,3 +262,33 @@ $green-hover: #80BF41;
     font-size: 0.8em;
   }
 }  
+
+@media screen and (max-width: 750px) {
+  .logo {
+    width: 170px;
+  }
+  .k-h-wrapper {
+    width: 50px;;
+  }
+  .social-media {
+    width: 50%;
+    float: right;
+    margin-left: -20%;
+    padding-left:-10%;
+  }
+  .k-h-logo-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .k-h-wrapper {
+    display: none;
+  }
+  .logo {
+    width: 50%;
+    text-align: center;
+  }
+  .social-media {
+  }
+}
