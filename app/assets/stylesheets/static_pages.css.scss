@@ -87,7 +87,7 @@ $white-border: 2px solid white;
   clear: both;
   .exhibition, .project, .symposium, .program {
     width: 25%;
-    color: white;
+    color: black;
     text-align: center;
     float: left;
     margin-top: 10px; 
@@ -99,7 +99,7 @@ $white-border: 2px solid white;
       text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
     }
     &:hover {
-      color: black;
+      color: white;
       text-shadow: 1px 1px 0px rgba(0,0,0,0.0);
     }
   }
@@ -109,7 +109,7 @@ $white-border: 2px solid white;
   background-color: #195935;
   border-right: $white-border;
   &:hover {
-    background: lighten(#195935, 10%);
+    background: darken(#195935, 10%);
   }
 }
 
@@ -117,7 +117,7 @@ $white-border: 2px solid white;
   background-color: #588c49;
   border-right: $white-border;
   &:hover {
-    background: lighten(#588c49, 10%);
+    background: darken(#588c49, 10%);
   }
 }
 
@@ -125,14 +125,14 @@ $white-border: 2px solid white;
   background-color: #71a64b;
   border-right: $white-border;
   &:hover {
-    background: lighten(#71a64b, 10%);
+    background: darken(#71a64b, 10%);
   }
 }
 
 .program {
   background-color: #80bf41;
   &:hover {
-    background: lighten(#80bf41, 10%);
+    background: darken(#80bf41, 10%);
   }
 }
 
@@ -228,7 +228,7 @@ $white-border: 2px solid white;
   }
   .intro-text {
     padding-top: 10px;
-    font-size: 0.9em;
+    font-size: 1.1em;
   }
   .big-title {
     font-size: 1.3em;
@@ -238,7 +238,7 @@ $white-border: 2px solid white;
   }
   .text-column {
     @include columns(1);
-    font-size: 0.9em;
+    font-size: 1.1em;
   }
   .footer-wrapper {
     font-size: 0.8em;
