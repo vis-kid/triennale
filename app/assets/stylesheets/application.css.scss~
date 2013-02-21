@@ -9,11 +9,13 @@ body {
   font-family: $helvetica;
   color: black;
   background-color: white;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
 }
 
 .container {
   @include box-sizing(border-box);
   margin: auto;
   width: 90%;
-  background: white;
+  background: url(/assets/lightpaperfibers01.jpg) repeat;
 }
