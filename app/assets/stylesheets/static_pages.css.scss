@@ -148,11 +148,12 @@ $green-hover: #80BF41;
 }
 
 .context-title, .big-title, .small-title {
-  text-shadow: white 0 1px 2px #999FA2;
+  text-shadow: 0 0.9px 2px white, 0px 2px 3px black;
+
 }
 
 .context-title {
-  text-shadow: white 0px 2px 7px #B8B8B8;
+  text-shadow: 0px 0.9px 3px rgba(0, 0, 0, 0.25);
   clear: both;
   color: white;
   padding: none;
@@ -162,6 +163,9 @@ $green-hover: #80BF41;
   font-size: 3.125em; // 50px / 16px
   font-style: italic;
   font-weight: bold;
+  &:hover {
+    color: green;
+  }
 }
 
 .big-title {
@@ -284,6 +288,9 @@ $green-hover: #80BF41;
 }
 
 @media screen and (max-width: 550px) {
+  body .container {
+    width: 97%;
+  }
   .k-h-wrapper {
     display: none;
   }
