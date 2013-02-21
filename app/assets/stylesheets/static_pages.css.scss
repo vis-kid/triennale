@@ -239,7 +239,9 @@ $green-hover: #80BF41;
   .nav_tabs {
     .exhibition, .project, .symposium, .program {
       width: 50%;
-      margin-bottom: 0px;
+      margin-bottom: 0px; }
+    .project {
+      border-right: none;
     }
     p {
       padding-top: 14px;
@@ -289,7 +291,7 @@ $green-hover: #80BF41;
 
 @media screen and (max-width: 550px) {
   body .container {
-    width: 97%;
+    width: 98%;
   }
   .k-h-wrapper {
     display: none;
