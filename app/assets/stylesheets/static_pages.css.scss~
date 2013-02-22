@@ -119,6 +119,7 @@ $green-hover: #80BF41;
 .exhibition {
   background-color: #195935;
   border-right: $white-border;
+  @include transition (background 0.3s ease-in);
   &:hover {
     background: darken(#195935, 10%);
   }
@@ -166,7 +167,7 @@ $green-hover: #80BF41;
   @include transition (color 5s ease-in-out, text-shadow 5s ease-in-out);
   &:hover {
     color: #014023;
-    text-shadow: 0px 0.9px 5px rgba(0,0,0,0,0.25);
+    text-shadow: 0px 0.9px 5px rgba(0,0,0,0.25);
   }
 }
 

@@ -119,6 +119,7 @@ $green-hover: #80BF41;
 .exhibition {
   background-color: #195935;
   border-right: $white-border;
+  @include transition (background 0.3s ease-in);
   &:hover {
     background: darken(#195935, 10%);
   }
@@ -127,6 +128,7 @@ $green-hover: #80BF41;
 .project {
   background-color: #588c49;
   border-right: $white-border;
+  @include transition (background 0.3s ease-in);
   &:hover {
     background: darken(#588c49, 10%);
   }
@@ -135,6 +137,7 @@ $green-hover: #80BF41;
 .symposium { 
   background-color: #71a64b;
   border-right: $white-border;
+  @include transition (background 0.3s ease-in);
   &:hover {
     background: darken(#71a64b, 10%);
   }
@@ -142,6 +145,7 @@ $green-hover: #80BF41;
 
 .program {
   background-color: #80bf41;
+  @include transition (background 0.3s ease-in);
   &:hover {
     background: darken(#80bf41, 10%);
   }
