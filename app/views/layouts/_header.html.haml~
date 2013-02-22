@@ -2,6 +2,8 @@
   %nav
     %a.logo{ :href => '#' } in.print.out
     .k-h-wrapper
-      = link_to image_tag("K-Haus-Logo-non-hover.jpg", :alt => "Künstlerhaus", :class => "k-h_logo")
+      = link_to image_tag("K-Haus-Logo-non-hover.jpg", :mouseover => "K-Haus-Logo-hover.jpg", :alt => "Künstlerhaus", :class => "k-h_logo")
       %p.k-h-logo-text k/haus
     %a.social-media{ :href => '#' } FB
+    %a.social-media{ :href => '#' } Tumblr
+    %a.social-media{ :href => '#' } MAP
