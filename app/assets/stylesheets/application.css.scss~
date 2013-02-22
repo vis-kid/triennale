@@ -17,5 +17,5 @@ body {
   @include box-sizing(border-box);
   margin: auto;
   width: 90%;
-  background: url(/assets/lightpaperfibers01.jpg) repeat;
+  background: url(/assets/handmade-paper.jpg) repeat;
 }
