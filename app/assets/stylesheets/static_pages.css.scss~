@@ -232,7 +232,20 @@ $green-hover: #80BF41;
   }
 }
 
-
+ @media screen and (max-width: 800px) {
+  .image-boxes {
+    height: 1000px;
+    height: 916px;
+      .box01, .box02, .box03, .box04 {
+        width: 50%;
+        height: 460px;
+        border: none;
+    }
+  }
+  .text-column {
+     clear: both;
+  }
+}
 
 @media screen and (max-width: 820px) {
   .nav_tabs {
@@ -270,19 +283,7 @@ $green-hover: #80BF41;
   .footer-wrapper {
     font-size: 0.8em;
   }
-  .image-boxes {
-      height: 1000px;
-      height: 916px;
-        .box01, .box02, .box03, .box04 {
-          width: 50%;
-          height: 460px;
-          border: none;
-      }
-    }
-    .text-column {
-       clear: both;
-    }
-  }
+}
 
 @media screen and (max-width: 750px) {
   .logo {
