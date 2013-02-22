@@ -169,6 +169,7 @@ $green-hover: #80BF41;
 }
 
 .big-title {
+  line-height: 1.2;
   clear: both;
   text-align: center;
   font-size: 2.18em; // 35px / 16px
@@ -180,6 +181,7 @@ $green-hover: #80BF41;
 
 .small-title {
  @extend .big-title;
+ line-height: 1.2em;
  font-size: 1.375em; // 22px / 16px
  margin-top: 0px;
  padding-top: 15px;
@@ -291,7 +293,7 @@ $green-hover: #80BF41;
 
 @media screen and (max-width: 550px) {
   body .container {
-    width: 98%;
+    width: 99%;
   }
   .k-h-wrapper {
     display: none;
@@ -299,5 +301,9 @@ $green-hover: #80BF41;
   .logo {
     width: 50%;
     text-align: center;
+  }
+  .small-title {
+    padding-right: 2px;
+    padding-left: 2px;
   }
 }
