@@ -33,6 +33,7 @@ $green-hover: #80BF41;
         text-align: center;
         text-decoration: none;
         color: white;
+        @include transition(color 0.3s ease-in);
         &:hover {
           color: $green-hover;
         }
@@ -55,6 +56,7 @@ $green-hover: #80BF41;
   text-decoration: none;
   float: left;
   padding-top: 7px;
+  @include transition(color 0.3s ease-in);
   padding-left: 1%;
   &:hover  {
     color: #195935; 
