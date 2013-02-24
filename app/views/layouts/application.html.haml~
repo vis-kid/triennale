@@ -10,6 +10,8 @@
     = render 'layouts/shim'
   %body
     .container
-      =render 'layouts/nav_tabs'
-      = yield
-      =render 'layouts/footer'
+      =render 'layouts/header'
+      .paper-container
+        =render 'layouts/nav_tabs'
+        = yield
+        =render 'layouts/footer'

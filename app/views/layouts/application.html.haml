@@ -12,5 +12,6 @@
     .container
       =render 'layouts/header'
       =render 'layouts/nav_tabs'
-      = yield
-      =render 'layouts/footer'
+      .paper-container
+        = yield
+        =render 'layouts/footer'

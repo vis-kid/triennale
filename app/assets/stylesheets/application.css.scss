@@ -17,5 +17,9 @@ body {
   @include box-sizing(border-box);
   margin: auto;
   width: 90%;
+}
+
+.paper-container {
   background: url(/assets/lightpaperfibers.jpg) repeat;
+  margin-top: 10px;
 }

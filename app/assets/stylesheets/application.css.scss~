@@ -17,5 +17,9 @@ body {
   @include box-sizing(border-box);
   margin: auto;
   width: 90%;
-  background: url(/assets/handmade-paper.jpg) repeat;
+}
+
+.paper-container {
+  background-color: red;
+  margin-top: 10px;
 }
