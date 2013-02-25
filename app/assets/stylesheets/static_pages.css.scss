@@ -107,13 +107,16 @@ $green-hover: #80BF41;
     height: 40px;
     margin-bottom: 0px;
     cursor: pointer;
-    p {
-      padding-top: 10px;
-      text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
-    }
-    &:hover {
-      color: white;
-      text-shadow: 1px 1px 0px rgba(0,0,0,0.0);
+    a {
+      display: block;
+      padding: 9px 10px;
+      text-decoration: none;
+      color: black;
+      text-shadow: 1px 1px 0px rgba(0,0,0,0.3);
+      &:hover {
+        color: white;
+        text-shadow: 1px 1px 0px rgba(0,0,0,0.0);
+      }
     }
   }
 }

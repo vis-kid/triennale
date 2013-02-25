@@ -1,9 +1,10 @@
 .nav_tabs
-  .exhibition
-    %p Austellung
+  .exhibition.link
+    =link_to "Austellung", static_pages_exhibition_path
   .project
-    %p Plakatkunstprojekt
+    =link_to "Plakatkunstprojekt", static_pages_project_path
   .symposium
-    %p Symposium
+    =link_to "Symposium", static_pages_symposium_path
   .program
-    %p Begleitprogramm
+    =link_to "Begleitprogramm", static_pages_program_path
+
