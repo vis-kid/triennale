@@ -11,7 +11,7 @@
   %body
     .container
       =render 'layouts/header'
+      =render 'layouts/nav_tabs'
       .paper-container
-        =render 'layouts/nav_tabs'
         = yield
         =render 'layouts/footer'
