@@ -105,7 +105,7 @@ $green-hover: #80BF41;
     float: left;
     margin-top: 10px; 
     height: 40px;
-    margin-bottom: 0px;
+    margin-bottom: 25px;
     cursor: pointer;
     a {
       display: block;
@@ -201,10 +201,10 @@ $green-hover: #80BF41;
 
 .intro-text {
   font-size: 1.25em; // 20px / 16px
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 8px;
-  padding-left: 1.0416667%; //10px / 960px
-  padding-right: 1.0416667%; //10px / 960px
+  padding-left: 3.125%; //30px / 960px
+  padding-right: 3.125%; //30px / 960px
   text-align: justify;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;

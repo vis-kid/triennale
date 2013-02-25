@@ -20,6 +20,6 @@ body {
 }
 
 .paper-container {
-  background-color: red;
-  margin-top: 10px;
+  background: url(/assets/lightpaperfibers.jpg) repeat;
+  margin-top: 50px;
 }
