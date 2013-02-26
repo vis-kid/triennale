@@ -1,23 +1,21 @@
 @import "bourbon";
 
-/* FUNCTIONS */
 
-@function fluid_text($target_size, $context_size){
-  @return (($target_size * 1.00) / $context_size);
-}
 
 $header_height: 50px;
 $white-border: 2px solid white;
 $green-hover: #80BF41;
-
-
+$dark_text: black;
+$light_text: white;
+$head_foot_color: black;
+$light_background: white;
 
 .header-wrapper { 
-  color: white;
+  color: $light_text;;
 }
 
 .footer-wrapper {
-  background-color: black;
+  background-color: $head_foot_color;;
   height: $header_height;
   clear: both;
   ul { 
@@ -32,7 +30,7 @@ $green-hover: #80BF41;
         margin-top: 20px;
         text-align: center;
         text-decoration: none;
-        color: white;
+        color: $light_text;
         @include transition(color 0.3s ease-in);
         &:hover {
           color: $green-hover;
@@ -46,47 +44,50 @@ $green-hover: #80BF41;
 }
 
 .logo {
-  @include box-sizing(border-box);
-  background-color: black;
+  @include transition(color 0.3s ease-in);
+  padding: {
+    top: 7px;
+    left: 1%;
+  }
+  background-color: $head_foot_color;
   font-size: 30px;
   width: 25%;
   height: $header_height;
-  color: white;
+  color: $light_text;
   border-right: 2px solid white;
   text-decoration: none;
   float: left;
-  padding-top: 7px;
-  @include transition(color 0.3s ease-in);
-  padding-left: 1%;
   &:hover  {
-    color: #195935; 
+    color: $green-hover; 
   }
 }
 .k-h-wrapper {
-  background-color: white;
+  background-color: $light_background;
   float: left;
   width: 50%;
-}
 
-.k-h_logo {
-  float: left;
-  &:hover {
-    background-color: #195935;
+  .k-h_logo {
+    float: left;
+    &:hover {
+      background-color: #195935;
+    }
+  }
+   
+  .k-h-logo-text { 
+    color: black;
+    float: left;
+    padding-top: 34px;
+    padding-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    &:hover {
+      color: #195935;
+    }
   }
 }
 
-.k-h-logo-text { 
-  color: black;
-  float: left;
-  padding-top: 34px;
-  padding-left: 10px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 14px;
-  &:hover {
-    color: #195935;
-  }
-}
+
 
 .social-media {
   @extend .logo;
@@ -157,22 +158,25 @@ $green-hover: #80BF41;
 }
 
 .context-title, .big-title, .small-title {
-  text-shadow: 0 0.9px 2px white, 0px 1px 3px black;
+  text-shadow: 0 0.9px 2px white, 0px 1px 2px black;
+  clear: both;
 
 }
 
 .context-title {
-  text-shadow: 0px 0.9px 3px rgba(0, 0, 0, 0.25);
-  clear: both;
-  color: white;
-  padding: none;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  font-size: 3.125em; // 50px / 16px
-  font-style: italic;
-  font-weight: bold;
   @include transition (color 2s ease-in-out, text-shadow 2s ease-in-out);
+  text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.20);
+  color: darken($light_text, 2%);
+  margin: {
+    top: 10px;
+    bottom: 10px;
+  }
+  text-align: center;
+  font: {
+    size: 3.125em; // 50px / 16px
+    style: italic;
+    weight: bold;
+  }
   &:hover {
     color: #014023;
     text-shadow: 0px 0.9px 5px rgba(0,0,0,0.25);
@@ -180,61 +184,66 @@ $green-hover: #80BF41;
 }
 
 .big-title {
-  line-height: 1.2;
-  clear: both;
+  line-height: 1.2em;
   text-align: center;
-  font-size: 2.18em; // 35px / 16px
-  font-weight: bold;
   text-transform: uppercase;
+  font: {
+    size: 2.18em; // 35px / 16px
+    weight: bold;
+  }
   letter-spacing: 0.10em;
   margin-top: 15px;
 }
 
 .small-title {
  @extend .big-title;
- line-height: 1.2em;
  font-size: 1.375em; // 22px / 16px
- margin-top: 0px;
  padding-top: 15px;
- margin-bottom: 25px;
+ margin: {
+   top: 0px;
+   bottom: 25px;
+ }
 }
 
 .intro-text {
   font-size: 1.25em; // 20px / 16px
-  padding-top: 10px;
-  padding-bottom: 8px;
-  padding-left: 3.125%; //30px / 960px
-  padding-right: 3.125%; //30px / 960px
-  text-align: justify;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
+  padding: {
+    top: 10px;
+    bottom: 8px;
+    left: 3.125%; //30px / 960px
+    right: 3.125%; //30px / 960px
+  }
 }
 
-
+.text-column {
+  @extend .intro-text;
+  @include columns(2);
+  @include column-gap(12px);
+  font-size: 1.125em; // 18px / 16px
+  margin-bottom: 20px;
+}
 
 .image-boxes {
   @include box-shadow(0 0 10px rgba(0,0,0,0.07));
   padding: 2%;
   height: 285px;
   width: 100%;
-  margin: auto;
   margin-bottom: 20px;
   background-color: white;
   border: solid 14px #fbfbfb;
   .box01, .box02, .box03, .box04 {
-    @include box-sizing(border-box);
     float: left;
     width: 25%;
-    height: 100%;
     img {
       @include box-shadow(2px 2px 10px #F3F3F3);
       max-width: 100%;
       max-height: 100%;
       border: solid 10px white;
       display: block;
-      margin-left: auto;
-      margin-right: auto;
+      margin: {
+        left: auto;
+        right: auto;
+      }
     }
   }
 }
@@ -244,14 +253,7 @@ $green-hover: #80BF41;
     height: auto;
 }
 
-.text-column {
-  @extend .intro-text;
-  @include columns(2);
-  @include column-gap(15px);
-  font-size: 1.125em; // 18px / 16px
-  padding-top: 10px;
-  margin-bottom: 20px;
-}
+
 
 @media screen and (max-width: 960px) {
   .image-boxes {
@@ -275,7 +277,11 @@ $green-hover: #80BF41;
   .nav_tabs {
     .exhibition, .project, .symposium, .program {
       width: 50%;
-      margin-bottom: 0px; }
+      margin-bottom: 0px; 
+    }
+    .symposium, .program {
+      margin-bottom: 25px;
+    }
     .project {
       border-right: none;
     }
@@ -284,6 +290,7 @@ $green-hover: #80BF41;
       font-size: 0.93em;
     }
   }
+
   .k-h-wrapper {
     width: 25%
   }
@@ -322,14 +329,15 @@ $green-hover: #80BF41;
   }
   .k-h-wrapper {
     width: 50px;;
+    .k-h-logo-text {
+        display: none;
+      }
   }
   .social-media {
     width: 50%;
     float: right;
   }
-  .k-h-logo-text {
-    display: none;
-  }
+  
 }
 
 @media screen and (max-width: 710px) {
@@ -363,8 +371,10 @@ $green-hover: #80BF41;
     text-align: center;
   }
   .small-title {
-    padding-right: 2px;
-    padding-left: 2px;
+    padding: {
+      right: 2px;
+      left: 2px;
+    }
   }
   .image-boxes {
     .box01, .box02, .box03, .box04 {

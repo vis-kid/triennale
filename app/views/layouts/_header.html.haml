@@ -1,7 +1,7 @@
 %header.header-wrapper
   %nav
-    %a.logo{ :href => '#' } in.print.out
+    %a.logo{ :href => '/static_pages/home' } in.print.out
     .k-h-wrapper
-      = link_to image_tag("K-Haus-Logo-non-hover.jpg", :mouseover => "K-Haus-Logo-hover.jpg", :alt => "Künstlerhaus", :class => "k-h_logo")
+      = link_to image_tag("K-Haus-Logo-non-hover.jpg", :mouseover => "K-Haus-Logo-hover.jpg", :alt => "Künstlerhaus-Logo-Link", :class => "k-h_logo"), "http://www.k-haus.at/", :target => "_blank"
       %p.k-h-logo-text k/haus
     %a.social-media{ :href => '#' } FB
