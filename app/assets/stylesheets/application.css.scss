@@ -1,7 +1,17 @@
 @import "bourbon";
 @import "neat";
-@import "static_pages";
+@import "home";
+@import "exhibition";
 @import "reset";
+
+$header_height: 50px;
+$white-border: 2px solid white;
+$green-hover: #80BF41;
+$dark_text: black;
+$light_text: white;
+$head_foot_color: black;
+$light_background: white;
+
 
 body {
   @include box-sizing(border-box);
@@ -17,9 +27,142 @@ body {
   @include box-sizing(border-box);
   margin: auto;
   width: 90%;
+  max-width: 1000px;
 }
 
 .paper-container {
   background: url(/assets/lightpaperfibers.jpg) repeat;
   margin-top: 10px;
+  border: solid 4px #fbfbfb;
+}
+
+@media screen and (max-width: 960px) {
+  .image-boxes {
+        height: 1000px;
+        height: 916px;
+          .box01, .box02, .box03, .box04 {
+            width: 50%;
+            height: 460px;
+            border: none;
+        }
+      }
+    .text-column {
+        clear: both;
+    }
+    .image-box {
+      height: auto;
+    }
+}
+
+@media screen and (max-width: 870px) {
+  .nav_tabs {
+    .exhibition, .project, .symposium, .program {
+      width: 50%;
+      margin-bottom: 0px; 
+    }
+    .symposium, .program {
+      margin-bottom: 25px;
+    }
+    .project {
+      border-right: none;
+    }
+    p {
+      padding-top: 14px;
+      font-size: 0.93em;
+    }
+  }
+
+  .k-h-wrapper {
+    width: 25%
+  }
+  .social-media {
+    width: 50%;
+    float: left;
+  }
+  .context-title {
+    clear: both;
+    display: block;
+    padding-top: 14px;
+      font-size: 2.5em;
+  }
+  .intro-text {
+    padding-top: 10px;
+    font-size: 1.1em;
+  }
+  .big-title {
+    font-size: 1.3em;
+  }
+  .small-title {
+    font-size: 1.1em;
+  }
+  .text-column {
+    @include columns(1);
+    font-size: 1.1em;
+  }
+  .footer-wrapper {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .logo {
+    width: 170px;
+  }
+  .k-h-wrapper {
+    width: 50px;;
+    .k-h-logo-text {
+        display: none;
+      }
+  }
+  .social-media {
+    width: 50%;
+    float: right;
+  }
+  
+}
+
+@media screen and (max-width: 710px) {
+  .image-boxes {
+    height: 1835px;
+    .box01, .box02, .box03, .box04 {
+      width: 100%;
+      img { 
+        width: 318px;
+        height: auto;
+      }
+    }
+  }
+  .image-box {
+      height: auto;
+  }
+  .k-h-logo-text {
+    display: none;
+  }
+} 
+
+@media screen and (max-width: 550px) {
+  body .container {
+    width: 99%;
+  }
+  .k-h-wrapper {
+    display: none;
+  }
+  .logo {
+    width: 50%;
+    text-align: center;
+  }
+  .small-title {
+    padding: {
+      right: 2px;
+      left: 2px;
+    }
+  }
+  .image-boxes {
+    .box01, .box02, .box03, .box04 {
+      img {
+        width: 318px;
+        height: auto;
+      }
+    }
+  }
 }

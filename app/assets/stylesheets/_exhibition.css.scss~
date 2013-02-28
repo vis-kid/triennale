@@ -1,0 +1,52 @@
+$margin-top: 20px;
+
+.container{
+  @include outer-container;
+}
+.exhibition + .small-title {
+  @include span-columns(12);
+  text-align: left;
+  font-size: em(26);
+  margin-bottom: 20px;
+}
+  .date, .location, .artist {
+    font-size: em(20);
+    font-weight: bold;
+    display: block;
+    line-height: 1.5em;
+ }
+.intro-text-exhibition-00 {
+  @include span-columns(12);
+  margin-top: $margin-top;
+  font-size: em(22);
+}
+
+.intro-text-exhibition-01, .intro-text-exhibition-02 {
+  @extend .intro-text-exhibition-00;
+  font-size: em(18);
+  @include columns(2);
+  margin-top: $margin-top;
+}
+
+.exhibition-image-box {
+  .exhibition-pic {
+    @include span-columns(6);
+    margin-top: $margin-top;
+    margin-bottom: $margin-top;
+    img {
+      float: left;
+      display: block;
+      margin: auto;
+      width: 100%;
+      height: auto;
+      border: solid 14px #fbfbfb;
+      @include box-shadow(2px 2px 10px rgba(0,0,0,0.2));
+    }
+  }
+  .artist {
+    margin-top: 32%;
+    @include span-columns(6);
+
+  }
+}
+

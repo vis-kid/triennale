@@ -1,5 +1,6 @@
 = provide(:title, 'Home')
 %h1.context-title.image-box GELD MACHT SICHT BAR
+
 %section
   %p.intro-text Das Wiener Künstlerhaus veranstaltet 2013 mit in.print.out im Rahmen der Partnerschaft mit International Print Network (IPNet) erneut eine Großausstellung aktueller, internationaler, künstlerischer Grafik. Ergänzt wird die Ausstellung durch eine Werkschau historischer und aktueller Plakatkunst, das Plakatprojekt für den öffentlichen Raum GELD MACHT SICHT BAR sowie weiteren Begleitprogrammen.
 
@@ -8,8 +9,7 @@
   
 %section
   .image-boxes
-    .box01.center
-      = image_tag("pic01.jpg", :alt => "pic01", :class => ".box01")
+    = image_tag("pic01.jpg", :alt => "pic01", :class => ".box01")
     .box02.center
       = image_tag("pic02.jpg", :alt => "pic02", :class => ".box02")
 
@@ -19,6 +19,7 @@
     .box04.center
       = image_tag("pic04.jpg", :alt => "pic04", :class => ".box04")
 
-%p.text-column Die Ausstellung in.print.out stellt aktuelle Tendenzen der internationalen Grafikkunst in einen neuen Kontext mit temporären Arbeiten, Installationen und raumbezogenen grafischen Experimenten. Schwerpunktmäßig im Bereich der bildenden Kunst angesiedelt, behandelt in.print.out das Phänomen Grafik in seiner Komplexität als künstlerisches Ausdrucksmedium, als Schnittstelle zwischen der traditionellen Disziplin der Druckgrafik und neuester, innovativer Techniken, zwischen analogen und digitalen Medien, zwischen bedrucktem Papier und interaktiven Installationen sowie in seiner gesellschaftlichen Funktion als Plakat.
+%section
+  %p.text-column Die Ausstellung in.print.out stellt aktuelle Tendenzen der internationalen Grafikkunst in einen neuen Kontext mit temporären Arbeiten, Installationen und raumbezogenen grafischen Experimenten. Schwerpunktmäßig im Bereich der bildenden Kunst angesiedelt, behandelt in.print.out das Phänomen Grafik in seiner Komplexität als künstlerisches Ausdrucksmedium, als Schnittstelle zwischen der traditionellen Disziplin der Druckgrafik und neuester, innovativer Techniken, zwischen analogen und digitalen Medien, zwischen bedrucktem Papier und interaktiven Installationen sowie in seiner gesellschaftlichen Funktion als Plakat.
 
 

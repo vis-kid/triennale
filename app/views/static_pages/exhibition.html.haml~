@@ -1,1 +1,21 @@
-%p hi there
+= provide(:title, 'Exhibition')
+.container
+  .exhibition
+  %h1.small-title in.print.out - Grafik in/auswendig
+  %h3.date 19.04. - 09.06. 2013
+  %h3.location Künstlerhaus Wien
+ 
+  %p.intro-text-exhibition-00 Das Wiener Künstlerhaus veranstaltet 2013 mit in.print.out im Rahmen der Partnerschaft mit International Print Network (IPNet) erneut eine Großausstellung aktueller, internationaler, künstlerischer Grafik. Ergänzt wird die Ausstellung durch eine Werkschau historischer und aktueller Plakatkunst, das Plakatprojekt für den öffentlichen Raum GELD MACHT SICHT BAR sowie weiteren Begleitprogrammen.
+  <br>
+
+  %p.intro-text-exhibition-01 Die Ausstellung in.print.out stellt aktuelle Tendenzen der internationalen Grafikkunst in einen neuen Kontext mit temporären Arbeiten, Installationen und raumbezogenen grafischen Experimenten. Schwerpunktmäßig im Bereich der bildenden Kunst angesiedelt, behandelt in.print.out das Phänomen Grafik in seiner Komplexität als künstlerisches Ausdrucksmedium, als Schnittstelle zwischen der traditionellen Disziplin der Druckgrafik und neuester, innovativer Techniken, zwischen analogen und digitalen Medien, zwischen bedrucktem Papier und interaktiven Installationen sowie in seiner gesellschaftlichen Funktion als Plakat.
+  <br>
+  
+  .exhibition-image-box
+    .exhibition-pic
+      = image_tag("pic01.jpg", :alt => "pic01")
+    .artist Yossi Lernel - In Mexico City - 2008
+
+  %p.intro-text-exhibition-02 Die Ausstellung im Künstlerhaus gliedert sich in zwei Bereiche: Im Erdgeschoß des Künstlerhauses werden von ca. 100 internationalen KünstlerInnen Kunstwerke, die im Rahmen der Kooperation mit der internationalen Grafik Triennale Krakau für die Ausstellungen von einer internationalen Jury selektiert wurden, präsentiert. Erweitert wird die Ausstellung in.print.out mit einen Projektraum für temporäre Arbeiten, Installationen und raumbezogene grafische Experimente. Im Obergeschoß des Künstlerhauses wird historische und aktuelle Plakatkunst in Zusammenarbeit mit dem Plakatmuseum Wilanow in Warschau, der Zürcher Kunsthochschule der Künste / Rote Fabrik, der Grafikbiennale Brno, der Graphischen Lehranstalt Wien und der Wienbiblitohek gezeigt. Auch die Arbeiten des Plakatprojekts für den öffentlichen Raum GELD MACHT SICHT BAR werden in diesem Teil der Ausstellung präsentiert. 
+
+  
