@@ -2,6 +2,7 @@
 @import "neat";
 @import "home";
 @import "exhibition";
+@import "project";
 @import "reset";
 
 $header_height: 50px;
@@ -23,7 +24,7 @@ body {
   font-smoothing: antialiased;
 }
 
-.main-container {
+.container {
   @include box-sizing(border-box);
   margin: auto;
   width: 90%;
@@ -141,7 +142,7 @@ body {
 } 
 
 @media screen and (max-width: 550px) {
-  body .main-container {
+  body .container {
     width: 99%;
   }
   .k-h-wrapper {
