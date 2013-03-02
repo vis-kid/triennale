@@ -1,21 +1,129 @@
 = provide(:title, 'Exhibition')
 .container
-  .exhibition
-  %h1.small-title in.print.out - Grafik in/auswendig
+  .exhibition-page
+  %h1.first-title in.print.out - Grafik in/auswendig
   %h3.date 19.04. - 09.06. 2013
   %h3.location Künstlerhaus Wien
  
-  %p.intro-text-exhibition-00 Das Wiener Künstlerhaus veranstaltet 2013 mit in.print.out im Rahmen der Partnerschaft mit International Print Network (IPNet) erneut eine Großausstellung aktueller, internationaler, künstlerischer Grafik. Ergänzt wird die Ausstellung durch eine Werkschau historischer und aktueller Plakatkunst, das Plakatprojekt für den öffentlichen Raum GELD MACHT SICHT BAR sowie weiteren Begleitprogrammen.
+  %p.main-intro-text Das Wiener Künstlerhaus veranstaltet 2013 mit <strong>in.print.out</strong> im Rahmen der Partnerschaft mit International Print Network (IPNet) erneut eine <strong>Großausstellung aktueller, internationaler, künstlerischer Grafik.</strong> Ergänzt wird die Ausstellung durch eine <strong>Werkschau historischer und aktueller Plakatkunst, das Plakatprojekt für den öffentlichen Raum GELD MACHT SICHT BAR</strong> sowie weiteren Begleitprogrammen.
+
+
   <br>
 
-  %p.intro-text-exhibition-01 Die Ausstellung in.print.out stellt aktuelle Tendenzen der internationalen Grafikkunst in einen neuen Kontext mit temporären Arbeiten, Installationen und raumbezogenen grafischen Experimenten. Schwerpunktmäßig im Bereich der bildenden Kunst angesiedelt, behandelt in.print.out das Phänomen Grafik in seiner Komplexität als künstlerisches Ausdrucksmedium, als Schnittstelle zwischen der traditionellen Disziplin der Druckgrafik und neuester, innovativer Techniken, zwischen analogen und digitalen Medien, zwischen bedrucktem Papier und interaktiven Installationen sowie in seiner gesellschaftlichen Funktion als Plakat.
+  %p.text-01 Die Ausstellung <strong>in.print.out</strong> stellt aktuelle Tendenzen der internationalen Grafikkunst in einen neuen Kontext mit temporären Arbeiten, Installationen und raumbezogenen grafischen Experimenten. Schwerpunktmäßig im Bereich der bildenden Kunst angesiedelt, behandelt <strong>in.print.out</strong> das Phänomen Grafik in seiner Komplexität als künstlerisches Ausdrucksmedium, als Schnittstelle zwischen der traditionellen Disziplin der Druckgrafik und neuester, innovativer Techniken, zwischen analogen und digitalen Medien, zwischen bedrucktem Papier und interaktiven Installationen sowie in seiner gesellschaftlichen Funktion als Plakat.
   <br>
   
-  .exhibition-image-box
-    .exhibition-pic
-      = image_tag("pic01.jpg", :alt => "pic01")
-    %p.artist Yossi Lernel - In Mexico City - 2008
+  .exhibition-pic
+    = image_tag("pic01.jpg", :alt => "pic01")
 
-  %p.intro-text-exhibition-02 Die Ausstellung im Künstlerhaus gliedert sich in zwei Bereiche: Im Erdgeschoß des Künstlerhauses werden von ca. 100 internationalen KünstlerInnen Kunstwerke, die im Rahmen der Kooperation mit der internationalen Grafik Triennale Krakau für die Ausstellungen von einer internationalen Jury selektiert wurden, präsentiert. Erweitert wird die Ausstellung in.print.out mit einen Projektraum für temporäre Arbeiten, Installationen und raumbezogene grafische Experimente. Im Obergeschoß des Künstlerhauses wird historische und aktuelle Plakatkunst in Zusammenarbeit mit dem Plakatmuseum Wilanow in Warschau, der Zürcher Kunsthochschule der Künste / Rote Fabrik, der Grafikbiennale Brno, der Graphischen Lehranstalt Wien und der Wienbiblitohek gezeigt. Auch die Arbeiten des Plakatprojekts für den öffentlichen Raum GELD MACHT SICHT BAR werden in diesem Teil der Ausstellung präsentiert. 
-
+  %p.artist Yossi Lernel - In Mexico City - 2008
   
+  %p.text-02 Die Ausstellung im Künstlerhaus gliedert sich in <strong>zwei Bereiche:</strong> Im Erdgeschoß des Künstlerhauses werden von ca. 100 internationalen KünstlerInnen Kunstwerke, die im Rahmen der Kooperation mit der internationalen Grafik Triennale Krakau für die Ausstellungen von einer internationalen Jury selektiert wurden, präsentiert. Erweitert wird die Ausstellung <strong>in.print.out</strong> mit einen Projektraum für temporäre Arbeiten, Installationen und raumbezogene grafische Experimente. Im Obergeschoß des Künstlerhauses wird historische und aktuelle Plakatkunst in Zusammenarbeit mit dem Plakatmuseum Wilanow in Warschau, der Zürcher Kunsthochschule der Künste / Rote Fabrik, der Grafikbiennale Brno, der Graphischen Lehranstalt Wien und der Wienbiblitohek gezeigt. Auch die Arbeiten des Plakatprojekts für den öffentlichen Raum <strong>GELD MACHT SICHT BAR</strong> werden in diesem Teil der Ausstellung präsentiert. 
+  <br>
+  %h2.artists-headline Teilnehmende Künstler
+  <br>
+  .list
+    %p.art 
+      <strong>Australien:</strong> Brook Andrews<br>
+      <strong>Bangladesh:</strong> Nazir Ahmed<br>
+      <strong>Brasilien:</strong> Augusto Sampaio<br>
+      <strong>Bulgarien:</strong> Darina Peeva<br>
+      <strong>Bulgarien:</strong> Vania Valkova<br>
+      <strong>Bulgarien:</strong> Lubomir Krastev<br>
+      <strong>Canada:</strong> Edith Krause<br>
+      <strong>Canada:</strong> Derek Besant<br>
+      <strong>Canada:</strong> Ericka Walker<br>
+      <strong>Canada:</strong> Jill Ho-Jou<br>
+      <strong>Canada:</strong> Cecile Boucher<br>
+      <strong>Canada:</strong> Barbara Zeigler<br>
+      <strong>China:</strong> Zhang HuiJing<br>
+      <strong>Deutschland:</strong> Kirsten Borchert<br>
+      <strong>Deutschland:</strong> Birgit Fiedler<br>
+      <strong>Deutschland:</strong> Jochen Koehn<br>
+      <strong>Deutschland:</strong> Hansjürgen Gartner<br>
+      <strong>Deutschland:</strong> Richard Paul Meszaros<br>
+      <strong>Deutschland:</strong> Eugenia Gortchakova<br>
+      <strong>Finnland:</strong> KatriIkavalko<br>
+      <strong>Griechenland:</strong> Xenophon Sachinis<br>
+      <strong>Griechenland:</strong> Vicky Tsalamata<br>
+      <strong>Italien:</strong> Andrea Serafini<br>
+      <strong>Japan:</strong> Miyuki Kondo<br>
+      <strong>Japan:</strong> Atsuo Sakazume<br>
+      <strong>Japan:</strong> Yuka Iyama<br>
+      <strong>Japan:</strong> Haruko Cho<br>
+      <strong>Japan:</strong> Ikuhiro Kugo<br>
+      <strong>Japan:</strong> Aya Imamura<br>
+      <strong>Kroatien:</strong> Igor Cabraja<br>
+      <strong>Litauen:</strong> Vilija Kneyzite<br>
+      <strong>Neuseeland:</strong> Stephen Lovett<br>
+      <strong>Niederlande:</strong> Bert Brouwer<br>
+      <strong>Polen:</strong> Pluta Władysław<br>
+      <strong>Polen:</strong> Agnieszka Ziemiszewska<br>
+      <strong>Polen:</strong> Izabella Gustowska<br>
+      <strong>Polen:</strong> Rena Wota<br>
+      <strong>Polen:</strong> Tomasz Winiarski<br>
+      <strong>Polen:</strong> Jonasz Gajewski<br>
+      <strong>Polen:</strong> Grzegorz Banaskiewicz<br>
+      <strong>Polen:</strong> Alicja Snoch-Pawlowska<br>
+      <strong>Polen:</strong> Grzegorz Mycka<br>
+      <strong>Polen:</strong> Joanna Janowska-Augustyn<br>
+      <strong>Polen:</strong> Stefan Kaczmarek<br>
+      <strong>Polen:</strong> PUL<br>
+      <strong>Polen:</strong> Magdalena Duda-Patraszewska<br>
+      <strong>Polen:</strong> Beata Dlugosz<br>
+      <strong>Polen:</strong> Ilona Proczek-Kranc<br>
+      <strong>Polen:</strong> Karol Pomykala<br>
+      <strong>Polen:</strong> Antoni Kowalski<br>
+      <strong>Polen:</strong> Krystina Piotrowksa<br>
+      <strong>Polen:</strong> Sławomir Cwiek<br>
+      <strong>Polen:</strong> Jan Pamula<br>
+      <strong>Polen:</strong> Tomasz Kukawski<br>
+      <strong>Polen:</strong> Mariusz Palka<br>
+      <strong>Polen:</strong> Janusz Marciniak<br>
+      <strong>Polen:</strong> Katarzyna Marzec<br>
+      <strong>Polen:</strong> Brygida Masternak<br>
+      <strong>Polen:</strong> Małgorzata Mazur<br>
+      <strong>Polen:</strong> Andrzej Bednarzyk<br>
+      <strong>Portugal:</strong> Regina Costa<br>
+      <strong>Serbien:</strong> Milan Blanusa<br>
+      <strong>Slowenien:</strong> Eva Petrič<br>
+      <strong>Spanien:</strong> Javier Gil Perez<br>
+      <strong>Spanien:</strong> Francisco Velasco<br>
+      <strong>Spanien:</strong> Anne Heyvaert<br>
+      <strong>Spanien:</strong> Javier Aranguren<br>
+      <strong>Tschech Rep.:</strong> Simon Brejcha<br>
+      <strong>Tschech.Rep.:</strong> Ondrej Michalek<br>
+      <strong>Tschech.Rep.:</strong> Pavel Noga<br>
+      <strong>UK:</strong> Fay Nicolson<br>
+      <strong>UK:</strong> Lidija Antanasijevic<br>
+      <strong>UK:</strong> Paul Coldwell<br>
+      <strong>UK:</strong> ChrisMercier<br>
+      <strong>UK:</strong> Paul Ferragut<br>
+      <strong>UK:</strong> Peter Ford<br>
+      <strong>UK:</strong> Josephine Ganter<br>
+      <strong>USA:</strong> Eunice Kim<br>
+      <strong>Ukraine:</strong> Olena Golub<br>
+      <strong>Ungarn:</strong> Tibor Pataki<br>
+      <strong>Ungarn:</strong> Daradics Arpad<br>
+      <strong>Österreich:</strong> Ingeborg und Peter Braunsteiner<br>
+      <strong>Österreich:</strong> Margret Kohler-Heilingsetzer<br>
+      <strong>Österreich:</strong> Zekerya Saribatur<br>
+      <strong>Österreich:</strong> Schnitzler/KUSCH<br>
+      <strong>Österreich:</strong> Reinhold Egerth<br>
+      <strong>Österreich:</strong> Babsi Daum<br>
+      <strong>Österreich:</strong> Martina Stock<br>
+      <strong>Österreich:</strong> Robert Svoboda<br>
+      <strong>Österreich:</strong> Christine Pirker<br>
+      <strong>Österreich:</strong> Josef Danner<br>
+      <strong>Österreich:</strong> Ilse Chlan<br>
+      <strong>Österreich:</strong> Linde Waber<br>
+      <strong>Österreich:</strong> Bettina Patermo<br>
+      <strong>Österreich:</strong> Michael Wegerer<br>
+      <strong>Österreich:</strong> Natalia Weiss<br>
+      <strong>Österreich:</strong> Elisabeth Weissensteiner<br>
+      <strong>Österreich:</strong> Brigitte Pamperl<br>
+      <strong>Österreich:</strong> Jana Wisniewski<br>
+      <strong>Österreich:</strong> Andreas Ortag<br>
+      <strong>Österreich:</strong> Helga Cmelka<br>
+      <strong>Österreich:</strong> Markus Gottfried<br><strong>
+      

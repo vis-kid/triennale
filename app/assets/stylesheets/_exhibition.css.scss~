@@ -1,3 +1,4 @@
+@import "compass/css3";
 $margin-top: 20px;
 
 .container{
@@ -6,20 +7,20 @@ $margin-top: 20px;
 p strong {
   font-weight: bold;
 }
-h5 {
-  font-size: em(40);
-}
 
 .first-title {
   @include span-columns(12);
+  @extend .big-title;
   text-align: left;
   font-size: em(30);
   text-transform: none;
   font-weight: bold;
+  padding-top: 0px;
+  margin-top: 0px;
   margin-bottom: 0px;
   line-height: 1.5em;
 }
-  .date, .location, .artist {
+  .date, .location, .artist, .artists-headline {
     font-size: em(20);
     font-weight: bold;
     display: block;
@@ -33,7 +34,7 @@ h5 {
   line-height: 1.2em;
 }
 
-.text-01, .text-02 {
+.text-01, .text-02, .artist-column, .art{
   @extend .main-intro-text;
   font-size: em(18);
   @include columns(2);
@@ -56,8 +57,32 @@ h5 {
 }
 .artist {
   @include span-columns(5);
-  margin-top: 30%;
-  font-size: em(16);
-  float: right;
+  @include text-shadow(
+    rgba(#000,.03) 0px 436px 0,
+    rgba(#000,.04) 0px 374px 0,
+    rgba(#000,.06) 0px 312px 0,
+    rgba(#000,.08) 0px 250px 0,
+    rgba(#000,.2) 0px 184px 0,
+    rgba(#000,.4) 0px 122px 0,
+    rgba(#000,.5) 0px 62px 0 );
+    margin-top: 10%;
+    font-size: em(16);
+    float: right;
  }
 
+.artists-headline {
+  @include span-columns(12);
+  clear: both;
+  padding-top: 41px;
+  text-align: center;
+  font-size: em(22);
+}
+.art {
+  @include columns(2);
+  clear: both;
+  margin-top: 30px;
+  padding-bottom: 40px;
+  &.one-column {
+    @include columns(1);
+  }
+}

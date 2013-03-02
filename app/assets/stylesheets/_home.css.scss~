@@ -156,7 +156,7 @@ $light_background: white;
 }
 
 .context-title, .big-title, .small-title {
-  text-shadow: 0 0.9px 2px white, 0px 1px 2px black;
+  text-shadow: 0 0.9px 2px red, 0px 1px 2px black;
   clear: both;
 
 }
@@ -187,7 +187,7 @@ $light_background: white;
   text-transform: uppercase;
   font: {
     size: 2.18em; // 35px / 16px
-    weight: bold;
+    font-weight: bold;
   }
   letter-spacing: 0.10em;
   margin-top: 15px;

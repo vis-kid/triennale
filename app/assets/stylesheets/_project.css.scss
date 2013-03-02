@@ -1,6 +1,12 @@
+#container {
   .project-headline {
     @extend .first-title;
     font-size: em(21);
     line-height: 1.7em;
-    font-weight: bold;
   }
+  .location{
+    @extend .big-title;
+    text-align: left;
+    margin-bottom: 7px;
+  }
+}
