@@ -8,6 +8,11 @@ p strong {
   font-weight: bold;
 }
 
+#exhibition-page + .big-title {
+  text-align: left;
+  font-size: em(30);
+}
+
 .first-title {
   @include span-columns(12);
   @extend .big-title;
@@ -36,7 +41,6 @@ p strong {
 
 .text-01, .text-02, .artist-column, .art{
   @extend .main-intro-text;
-  font-size: em(18);
   @include columns(2);
   @include column-gap(10px);
   margin-top: $margin-top;

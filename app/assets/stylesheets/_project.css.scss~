@@ -1,12 +1,14 @@
-#container {
-  .project-headline {
-    @extend .first-title;
-    font-size: em(21);
-    line-height: 1.7em;
-  }
-  .location{
-    @extend .small-title;
-    text-align: left;
-    margin-bottom: 7px;
-  }
+#project-page .big-title {
+  text-align: left;
+}
+
+.sub-title {
+  @extend .big-title;
+  font-size: em(23);
+}
+
+.sub-sub-title {
+  @extend .sub-title;
+  font-weight: bold;
+  font-size: em(20);
 }

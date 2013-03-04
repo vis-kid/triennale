@@ -1,7 +1,7 @@
 = provide(:title, 'Exhibition')
 .container
   .exhibition-page
-  %h1.first-title in.print.out - Grafik in/auswendig
+  %h1.big-title in.print.out - Grafik in/auswendig
   %h3.date 19.04. - 09.06. 2013
   %h3.location Künstlerhaus Wien
  
@@ -24,7 +24,7 @@
   <br>
   .list
     %p.art 
-      Australien:</strong> Brook Andrews<br>
+      <strong>Australien:</strong> Brook Andrews<br>
       <strong>Bangladesh:</strong> Nazir Ahmed<br>
       <strong>Brasilien:</strong> Augusto Sampaio<br>
       <strong>Bulgarien:</strong> Darina Peeva<br>

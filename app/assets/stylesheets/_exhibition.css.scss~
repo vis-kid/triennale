@@ -8,6 +8,11 @@ p strong {
   font-weight: bold;
 }
 
+#exhibition-page + .big-title {
+  text-align: left;
+  font-size: em(30);
+}
+
 .first-title {
   @include span-columns(12);
   @extend .big-title;
@@ -84,5 +89,6 @@ p strong {
   padding-bottom: 40px;
   &.one-column {
     @include columns(1);
+    line-height: 1.5em;
   }
 }
