@@ -1,0 +1,7 @@
+#symposium-page .big-title {
+  text-align: left;
+}
+
+#symposium-page .date {
+  margin-top: 15px;
+}

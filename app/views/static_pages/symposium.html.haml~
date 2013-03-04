@@ -10,12 +10,12 @@
     
     %p.main-intro-text Die Auseinandersetzungen mit der gegenwärtigen, von vielen Seiten diagnostizierten „Krise des Plakats“ als Medium, die maßgeblich durch die wachsende Dominanz elektronisch vermittelbarer Bild/Textkombinationen verursacht wurde, steht auf der Agenda der TeilnehmerInnen. Anhand von Fallbeispielen werden zentrale Ereignisse der Plakatkunst in den beiden vergangenen Jahrhunderten dargestellt.
     <br>
-    %p.main-intro-text <strong>Konzept und Organisation:</strong> Sergius Kodera, Georg Lebzelter
-    <br>
     .exhibition-pic
       =image_tag("pic03.jpg", :alt => "pic02")
     %p.artist Magdalena Duda-Patraszewska - Futro 2 - 2011
     <br>
+    %p.main-intro-text <strong>Konzept und Organisation:</strong> Sergius Kodera, Georg Lebzelter
+
     %h2.artists-headline TeilnehmerInnen
     %p.art.one-column 
       Marta Sylvestrová, <strong>Tschech. Rep.</strong><br> 
