@@ -3,6 +3,7 @@
 @import "home";
 @import "exhibition";
 @import "project";
+@import "symposium";
 @import "reset";
 
 $header_height: 50px;
@@ -77,8 +78,8 @@ body {
     width: 25%
   }
   .social-media {
-    width: 50%;
-    float: left;
+    width: 25%;
+    float: right;
   }
   .context-title {
     clear: both;
@@ -110,17 +111,8 @@ body {
     width: 170px;
   }
   .k-h-wrapper {
-    width: 50px;;
-    .k-h-logo-text {
-        display: none;
       }
   }
-  .social-media {
-    width: 50%;
-    float: right;
-  }
-  
-}
 
 @media screen and (max-width: 710px) {
   .image-boxes {
@@ -138,6 +130,13 @@ body {
   }
   .k-h-logo-text {
     display: none;
+  }
+  .k-h-wrapper {
+    width: 50px;
+  }
+  .social-media {
+    width: 50%;
+  }
   }
 } 
 
@@ -164,6 +163,12 @@ body {
         width: 318px;
         height: auto;
       }
+    }
+  }
+  .social-media {
+    img {
+      float: left;
+      padding-right: 0px;
     }
   }
 }

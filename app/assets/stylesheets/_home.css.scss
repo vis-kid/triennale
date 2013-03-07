@@ -72,18 +72,12 @@ $light_background: white;
   }
    
   .k-h-logo-text { 
-    color: black;
+    width: 20px;
+    height: auto;
     float: left;
-    padding-top: 34px;
     padding-left: 10px;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 14px;
-    &:hover {
-      color: #195935;
     }
   }
-}
 
 
 
@@ -91,6 +85,27 @@ $light_background: white;
   @extend .logo;
   width: 25%;
   border-right: none;
+  padding-left: 0%;
+  padding: 0px;
+  position: relative;
+  .top, .bottom {
+    position: absolute;
+    width: 50px;
+    border-left: solid 10px black;
+  }
+  .top {
+    border-left: none;
+  }
+  img {
+    position: relative;
+    float: left;
+    width: 50px; 
+    height: 50px;
+    @include transition (opacity 0.3s ease-in);
+    &:hover {
+      opacity: 0;
+    }
+  }
 }
 
 
