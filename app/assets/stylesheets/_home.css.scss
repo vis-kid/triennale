@@ -87,20 +87,15 @@ $light_background: white;
   border-right: none;
   padding-left: 0%;
   padding: 0px;
-  position: relative;
-  .top, .bottom {
-    position: absolute;
-    width: 50px;
-    border-left: solid 10px black;
-  }
   .top {
-    border-left: none;
+    position: absolute;
   }
   img {
     position: relative;
     float: left;
     width: 50px; 
     height: 50px;
+    border-right: $white-border;;
     @include transition (opacity 0.3s ease-in);
     &:hover {
       opacity: 0;
@@ -207,11 +202,11 @@ $light_background: white;
   text-align: center;
   text-transform: uppercase;
   font: {
-    size: 2.18em; // 35px / 16px
+    size: em(30); // 30px / 16px
     font-weight: bold;
   }
   letter-spacing: 0.10em;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .small-title {

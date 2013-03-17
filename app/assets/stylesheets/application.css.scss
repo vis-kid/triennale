@@ -4,6 +4,7 @@
 @import "exhibition";
 @import "project";
 @import "symposium";
+@import "program";
 @import "reset";
 
 $header_height: 50px;
@@ -94,15 +95,25 @@ body {
   .big-title {
     font-size: 1.3em;
   }
+  #exhibition-page + .big-title {
+    font-size: 1.3em;
+    margin-top: 0px;
+  }
+  .sub-title {
+    font-size: 1.1em;
+  }
   .small-title {
     font-size: 1.1em;
   }
-  .text-column {
+  .text-column, .text-01, .text-02, .art {
     @include columns(1);
-    font-size: 1.1em;
+    //font-size: 1.1em;
   }
   .footer-wrapper {
     font-size: 0.8em;
+  }
+  .artists-headline {
+    text-align: left;
   }
 }
 
@@ -136,6 +147,21 @@ body {
   }
   .social-media {
     width: 50%;
+    img {
+      display: none;
+    }
+  }
+  .exhibition-pic {
+    img {
+      @include span-columns(12);
+      width: 318px;
+    }
+  }
+  .artist {
+    @include span-columns(7);
+    text-shadow: none;
+    float: none;
+    text-align: center;
   }
 } 
 

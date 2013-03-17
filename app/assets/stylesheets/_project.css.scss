@@ -4,11 +4,12 @@
 
 .sub-title {
   @extend .big-title;
-  font-size: em(23);
+  font-size: em(20);
 }
 
 .sub-sub-title {
   @extend .sub-title;
   font-weight: bold;
-  font-size: em(21);
+  margin-top: 10px;
+  font-size: em(22);
 }
