@@ -66,6 +66,7 @@ $light_background: white;
 
   .k-h_logo {
     float: left;
+    padding-left: 1%;
     &:hover {
       background-color: #195935;
     }
@@ -117,7 +118,7 @@ $light_background: white;
     cursor: pointer;
     a {
       display: block;
-      padding: 9px 10px;
+      padding-top: 10px;
       text-decoration: none;
       color: white;
       &:hover {
@@ -199,7 +200,6 @@ $light_background: white;
 
 .big-title {
   line-height: 1.2em;
-  text-align: center;
   text-transform: uppercase;
   font: {
     size: em(30); // 30px / 16px
@@ -207,6 +207,10 @@ $light_background: white;
   }
   letter-spacing: 0.10em;
   margin-top: 10px;
+}
+
+.center {
+  text-align: center;
 }
 
 .small-title {
