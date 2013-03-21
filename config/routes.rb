@@ -5,6 +5,7 @@ Triennale::Application.routes.draw do
   get "static_pages/project"
   get "static_pages/program"
   get "static_pages/about"
+  get "static_pages/map"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
