@@ -13,4 +13,7 @@ class StaticPagesController < ApplicationController
 
   def program
   end
+
+  def about
+  end
 end
