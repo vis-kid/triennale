@@ -1,5 +1,6 @@
 Triennale::Application.routes.draw do
-  get "static_pages/home"
+  root :to => "static_pages#index" 
+  #get "static_pages/home"
   get "static_pages/exhibition"
   get "static_pages/symposium"
   get "static_pages/project"
