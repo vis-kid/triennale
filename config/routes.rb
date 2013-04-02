@@ -1,12 +1,15 @@
 Triennale::Application.routes.draw do
-  root :to => "static_pages#index" 
-  #get "static_pages/home"
-  get "static_pages/exhibition"
-  get "static_pages/symposium"
-  get "static_pages/project"
-  get "static_pages/program"
-  get "static_pages/about"
-  get "static_pages/map"
+  
+  scope "(:locale)", :locale => /de|en/ do
+    root :to => "static_pages#index" 
+    #get "static_pages/home"
+    get "static_pages/exhibition"
+    get "static_pages/symposium"
+    get "static_pages/project"
+    get "static_pages/program"
+    get "static_pages/about"
+    get "static_pages/map"
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

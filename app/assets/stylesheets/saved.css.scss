@@ -1,0 +1,209 @@
+@import "bourbon";
+@import "neat";
+@import "home";
+@import "exhibition";
+@import "project";
+@import "symposium";
+@import "program";
+@import "reset";
+
+$header_height: 50px;
+$white-border: 2px solid white;
+$green-hover: #80BF41;
+$dark_text: black;
+$light_text: white;
+$head_foot_color: black;
+$light_background: white;
+
+
+body {
+  @include box-sizing(border-box);
+  font-size: 100%;
+  font-family: $helvetica;
+  color: black;
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.container {
+  @include box-sizing(border-box);
+  margin: auto;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.paper-container {
+  background: url(/assets/lightpaperfibers.jpg) repeat;
+  margin-top: 10px;
+  border: solid 4px #fbfbfb;
+}
+
+.credits {
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+  .image-boxes {
+        height: 1000px;
+        height: 916px;
+          .box01, .box02, .box03, .box04 {
+            width: 50%;
+            height: 460px;
+            border: none;
+        }
+      }
+    .text-column {
+        clear: both;
+    }
+    .image-box {
+      height: auto;
+    }
+}
+
+@media screen and (max-width: 870px) {
+  .nav_tabs {
+    .exhibition, .project, .symposium, .program {
+      width: 50%;
+      margin-bottom: 0px; 
+    }
+    .symposium, .program {
+      margin-bottom: 25px;
+    }
+    .project {
+      border-right: none;
+    }
+    p {
+      padding-top: 14px;
+      font-size: 0.93em;
+    }
+  }
+
+  .k-h-wrapper {
+    width: 25%
+  }
+  .social-media {
+    width: 25%;
+    float: right;
+  }
+  .context-title {
+    clear: both;
+    display: block;
+    padding-top: 14px;
+      font-size: 2.5em;
+  }
+  .intro-text {
+    padding-top: 10px;
+    font-size: 1.1em;
+  }
+  .big-title {
+    font-size: 1.3em;
+  }
+  #exhibition-page + .big-title {
+    font-size: 1.3em;
+    margin-top: 0px;
+  }
+  .sub-title {
+    font-size: 1.1em;
+  }
+  .small-title {
+    font-size: 1.1em;
+  }
+  .text-column, .text-01, .text-02, .art {
+    @include columns(1);
+    //font-size: 1.1em;
+  }
+  .footer-wrapper {
+    font-size: 0.8em;
+  }
+  .artists-headline {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .logo {
+    width: 170px;
+  }
+  .k-h-wrapper {
+      }
+  }
+
+@media screen and (max-width: 710px) {
+  .image-boxes {
+    height: 1870px;
+    .box01, .box02, .box03, .box04 {
+      width: 100%;
+      img { 
+        width: 318px;
+        height: auto;
+      }
+    }
+  }
+  .image-box {
+      height: auto;
+  }
+  .k-h-logo-text {
+    display: none;
+  }
+  .k-h-wrapper {
+    width: 50px;
+  }
+  .social-media {
+    width: 50%;
+    img {
+      display: none;
+    }
+  }
+  .exhibition-pic {
+    img {
+      @include span-columns(12);
+      width: 318px;
+    }
+  }
+  .artist {
+    @include span-columns(7);
+    text-shadow: none;
+    float: none;
+    text-align: center;
+  }
+  .logo {
+    border-right: 2px solid black;
+  }
+} 
+
+@media screen and (max-width: 550px) {
+  body .container {
+    width: 99%;
+  }
+  .k-h-wrapper {
+    display: none;
+  }
+  .logo {
+    width: 50%;
+    text-align: center;
+  }
+  .small-title {
+    padding: {
+      right: 2px;
+      left: 2px;
+    }
+  }
+  .image-boxes {
+    .box01, .box02, .box03, .box04 {
+      img {
+        width: 318px;
+        height: auto;
+      }
+    }
+  }
+  .social-media {
+    img {
+      float: left;
+      padding-right: 0px;
+    }
+  }
+  .map {
+  }
+}

@@ -1,4 +1,4 @@
-@import "bourbon";
+
 
 $header_height: 50px;
 $white-border: 2px solid white;
@@ -77,8 +77,8 @@ $light_background: white;
     height: auto;
     float: left;
     padding-left: 10px;
-    }
   }
+}
 
 
 
@@ -102,6 +102,11 @@ $light_background: white;
       opacity: 0;
     }
   }
+}
+
+ nav .language {
+  font-size: 80px;
+  float: right;
 }
 
 
