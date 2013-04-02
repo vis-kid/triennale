@@ -28,7 +28,7 @@ $light_background: white;
         margin-top: 20px;
         text-align: center;
         text-decoration: none;
-        color: $light_text;
+        color: $light-background;
         @include transition(color 0.3s ease-in);
         &:hover {
           color: $green-hover;
@@ -88,8 +88,14 @@ $light_background: white;
   border-right: none;
   padding-left: 0%;
   padding: 0px;
+  .language {
+    a {
+      color: red;
+    }
+  }
   .top {
     position: absolute;
+    
   }
   img {
     position: relative;
@@ -104,10 +110,6 @@ $light_background: white;
   }
 }
 
- nav .language {
-  font-size: 80px;
-  float: right;
-}
 
 
 .nav_tabs { 
