@@ -10,7 +10,7 @@
       %li
         %a{ :href => 'http://triennale.tumblr.com', :target => '_blank' } BLOG
       %li 
-        = link_to_unless I18n.locale == :en, image_tag("UK-flag.jpg"), locale: :en
+        = link_to_unless I18n.locale == :en, (image_tag("UK-flag.jpg")), locale: :en
       %li          
-        = link_to_unless I18n.locale == :de, image_tag("GER-flag.jpg"), locale: :de 
+        = link_to_unless I18n.locale == :de, (image_tag("GER-flag.jpg")), locale: :de 
 
